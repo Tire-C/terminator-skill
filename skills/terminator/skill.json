@@ -1,20 +1,8 @@
 {
-  "name": "Terminator",
+  "name": "terminator",
   "slug": "terminator",
-  "version": "0.1.1",
-  "type": "orchestration-skill",
+  "version": "0.1.2",
   "entrypoint": "SKILL.md",
-  "description": "Environment-adaptive orchestration skill that turns user-defined goals into executable multi-tool workflows.",
-  "license": "MIT",
-  "invocation": [
-    "Use Terminator to ...",
-    "Terminator"
-  ],
-  "keywords": [
-    "ai-agent",
-    "skill",
-    "orchestration",
-    "workflow",
-    "automation"
-  ]
+  "description": "Environment-adaptive workflow skill.",
+  "license": "MIT"
 }
