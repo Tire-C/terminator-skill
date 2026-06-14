@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Terminator** is a terminal-first, environment-adaptive orchestration skill for AI agents.
+**Terminator** is an environment-adaptive orchestration skill for AI agents.
 
 It transforms user-defined objectives into structured multi-tool workflows. It discovers available tools, maps their capabilities, plans the execution sequence, coordinates the workflow, handles blockers, and verifies the final result.
 
@@ -33,7 +33,7 @@ Supported tool categories include:
 - CLI tools
 - plugins
 - scripts
-- terminal commands
+- commands
 - internal agent tools
 - project workflows
 - build and test systems
