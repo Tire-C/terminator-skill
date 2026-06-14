@@ -1,7 +1,7 @@
 {
   "name": "Terminator",
   "slug": "terminator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "orchestration-skill",
   "entrypoint": "SKILL.md",
   "description": "Environment-adaptive orchestration skill that turns user-defined goals into executable multi-tool workflows.",
