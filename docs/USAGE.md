@@ -8,12 +8,6 @@ Give Terminator an objective:
 Use Terminator to <goal>
 ```
 
-Italian invocation:
-
-```text
-Usa Terminator per <obiettivo>
-```
-
 ## Examples
 
 ### Project recovery
@@ -40,7 +34,7 @@ Use Terminator to create a professional presentation from the files in this fold
 Use Terminator to create a professional CV using the documents in these folders as sources.
 ```
 
-### Terminal readiness
+### Readiness check
 
 ```text
 Terminator
