@@ -1,6 +1,6 @@
 # Terminator Skill
 
-Terminator is a terminal-first orchestration skill for AI agents.
+Terminator is an environment-adaptive orchestration skill for AI agents.
 
 It turns user goals into multi-tool workflows by discovering and coordinating the tools available in the current environment.
 
