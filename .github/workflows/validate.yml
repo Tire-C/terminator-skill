@@ -19,5 +19,26 @@ jobs:
           test -f docs/SPECIFICATION.md
           test -f docs/USAGE.md
           test -f docs/TOOL_DISCOVERY.md
+      - name: Validate SKILL.md frontmatter
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('skills/terminator/SKILL.md')
+          text = p.read_text(encoding='utf-8')
+          assert text.startswith('---\n'), 'SKILL.md must start with YAML frontmatter'
+          end = text.find('\n---\n', 4)
+          assert end != -1, 'SKILL.md frontmatter must be closed'
+          frontmatter = text[4:end]
+          lines = dict(
+              line.split(':', 1)
+              for line in frontmatter.splitlines()
+              if ':' in line
+          )
+          name = lines.get('name', '').strip()
+          description = lines.get('description', '').strip()
+          assert name == 'terminator', 'frontmatter name must be terminator'
+          assert description, 'frontmatter description is required'
+          assert len(description) <= 1024, 'frontmatter description must be 1024 characters or fewer'
+          PY
       - name: Validate JSON manifest
         run: python -m json.tool skills/terminator/skill.json > /tmp/skill.json
