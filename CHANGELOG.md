@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.2
+
+Package format fix.
+
+- Added required YAML metadata to the main instruction file.
+- Improved discovery by compatible agent environments.
+- Added repository validation for required metadata.
+- Updated documentation for the installable package format.
+
 ## 0.1.1
 
 Compatibility wording update.
