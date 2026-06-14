@@ -15,10 +15,6 @@ Use Terminator to ...
 ```
 
 ```text
-Usa Terminator per ...
-```
-
-```text
 Terminator
 ```
 
@@ -34,7 +30,7 @@ Available tools may include:
 - plugins
 - local scripts
 - internal agent tools
-- terminal commands
+- commands
 - project scripts
 - build tools
 - test tools
@@ -110,7 +106,7 @@ Recommended response:
 STATUS: Ready.
 CONTEXT: <detected context>
 AVAILABLE ROUTES: <likely workflow categories>
-NEXT STEP: Tell me the objective using "Use Terminator to..." or "Usa Terminator per..."
+NEXT STEP: Tell me the objective using "Use Terminator to..."
 ```
 
 ## Sensitive actions
