@@ -45,7 +45,7 @@ Use Terminator to audit this project, fix the main blockers, and verify the resu
 ```
 
 ```text
-Usa Terminator per creare una presentazione professionale partendo da queste fonti.
+Use Terminator to create a professional presentation from these sources.
 ```
 
 ```text
