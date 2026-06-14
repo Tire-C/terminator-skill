@@ -1,0 +1,23 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f skills/terminator/SKILL.md
+          test -f skills/terminator/README.md
+          test -f skills/terminator/skill.json
+          test -f docs/SPECIFICATION.md
+          test -f docs/USAGE.md
+          test -f docs/TOOL_DISCOVERY.md
+      - name: Validate JSON manifest
+        run: python -m json.tool skills/terminator/skill.json > /tmp/skill.json
