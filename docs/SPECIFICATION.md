@@ -12,6 +12,29 @@ Terminator provides an orchestration layer over the current agent environment.
 
 The user supplies the goal. Terminator identifies the available capabilities and builds the path to completion.
 
+## Skill package format
+
+The installable skill package is located at:
+
+```text
+skills/terminator/
+```
+
+The required skill instruction file is:
+
+```text
+skills/terminator/SKILL.md
+```
+
+`SKILL.md` starts with YAML frontmatter containing:
+
+```yaml
+name: terminator
+description: Use this skill when the user wants to turn a goal into a structured multi-tool workflow.
+```
+
+The `name` field is lowercase and matches the parent folder name.
+
 ## Primary use pattern
 
 ```text
@@ -19,7 +42,7 @@ Use Terminator to <objective>
 ```
 
 ```text
-Usa Terminator per <obiettivo>
+Terminator
 ```
 
 ## Environment-adaptive design
