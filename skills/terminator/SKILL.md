@@ -1,3 +1,8 @@
+---
+name: Terminator
+description: Environment-adaptive orchestration skill for AI agents. Use it when the user wants to turn a goal into a structured multi-tool workflow with context scanning, tool discovery, planning, execution, blocker handling, and verification.
+---
+
 # Terminator Skill
 
 ## Identity
