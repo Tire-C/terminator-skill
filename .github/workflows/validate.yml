@@ -41,4 +41,13 @@ jobs:
           assert len(description) <= 1024, 'frontmatter description must be 1024 characters or fewer'
           PY
       - name: Validate JSON manifest
-        run: python -m json.tool skills/terminator/skill.json > /tmp/skill.json
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('skills/terminator/skill.json').read_text(encoding='utf-8'))
+          assert data['name'] == 'terminator'
+          assert data['slug'] == 'terminator'
+          assert data['version'] == '0.1.2'
+          assert data['entrypoint'] == 'SKILL.md'
+          PY
