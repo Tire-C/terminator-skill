@@ -2,7 +2,7 @@
 
 Initial public release of Terminator.
 
-Terminator is a terminal-first, environment-adaptive orchestration skill for AI agents. It turns user-defined goals into executable multi-tool workflows by discovering the tools available in the current environment, building a Tool Registry, planning the workflow, coordinating execution, handling blockers, and verifying the result.
+Terminator is an environment-adaptive orchestration skill for AI agents. It turns user-defined goals into executable multi-tool workflows by discovering the tools available in the current environment, building a Tool Registry, planning the workflow, coordinating execution, handling blockers, and verifying the result.
 
 ## Included
 
