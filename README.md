@@ -28,6 +28,22 @@ It can coordinate available capabilities such as:
 
 Every environment is different. Terminator adapts to what is actually available and authorized in the user's system.
 
+## Skill format
+
+The installable skill package is located at:
+
+```text
+skills/terminator/
+```
+
+The main instruction file is:
+
+```text
+skills/terminator/SKILL.md
+```
+
+`SKILL.md` includes YAML frontmatter with `name` and `description` metadata so compatible agent environments can discover and index the skill.
+
 ## Core workflow
 
 Terminator follows a stable operating protocol:
@@ -62,19 +78,25 @@ it inspects the current context and returns a readiness message asking for the o
 
 ## Installation
 
-Copy the skill directory into your AI agent's local skills folder:
+Compatible AI agent environments can install the skill from this repository URL:
+
+```text
+https://github.com/Tire-C/terminator-skill
+```
+
+Example install request:
+
+```text
+Install the Terminator skill from this repository: https://github.com/Tire-C/terminator-skill
+```
+
+Manual installation is also possible by copying the skill directory into the local skills folder used by your agent environment:
 
 ```text
 skills/terminator/
 ```
 
-The main instruction file is:
-
-```text
-skills/terminator/SKILL.md
-```
-
-You can also use the included installer scripts:
+You can also use the included installer scripts when a direct local destination is known:
 
 ### macOS/Linux
 
