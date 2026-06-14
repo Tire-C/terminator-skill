@@ -1,6 +1,6 @@
 # Terminator
 
-**Terminator** is a terminal-first, environment-adaptive orchestration skill for AI agents.
+**Terminator** is an environment-adaptive orchestration skill for AI agents.
 
 Give Terminator a goal and it turns that goal into a structured multi-tool workflow. It discovers the tools available in the current environment, maps them, plans the sequence, coordinates execution, resolves blockers, and verifies the result.
 
@@ -8,7 +8,7 @@ Terminator is designed for complex, multi-step work where one isolated tool is n
 
 ## What Terminator does
 
-Terminator helps AI agents operate as workflow orchestrators inside a terminal environment.
+Terminator helps AI agents operate as workflow orchestrators across compatible agent environments.
 
 It can coordinate available capabilities such as:
 
