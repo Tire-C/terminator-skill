@@ -2,7 +2,7 @@
 
 ## Identity
 
-**Terminator** is a terminal-first, environment-adaptive orchestration skill for AI agents.
+**Terminator** is an environment-adaptive orchestration skill for AI agents.
 
 Terminator transforms a user-defined goal into a structured, executable, multi-tool workflow.
 
@@ -58,11 +58,11 @@ For every objective, Terminator follows this protocol:
    - Identify deliverables, constraints, sources, target format, and expected level of completion.
 
 2. **Context scan**
-   - Inspect the current working directory.
+   - Inspect the current working context.
    - Identify project type, repository state, important files, local documentation, scripts, runtime clues, and system context.
 
 3. **Tool discovery**
-   - Discover available skills, MCP servers, CLI tools, plugins, scripts, terminal commands, internal tools, and workflows.
+   - Discover available skills, MCP servers, CLI tools, plugins, scripts, commands, internal tools, and workflows.
    - Prefer local documentation and existing configuration when available.
 
 4. **Tool Registry**
